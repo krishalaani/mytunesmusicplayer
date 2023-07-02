@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="logo"><i class='bx bxs-music'></i>MyTunes</h2>
+      <h1 class="title">MyTunes Music Player</h1>
+      <h4 class="pr"> Select any song from below to play </h4>
+      <div class="player">
+        <audio id="player" src="" controls></audio>
+        <div class="player__controls">
+          <button class="player__button player__button--play"></button>
+          <button class="player__button player__button--pause"></button>
+        </div>
+        <div class="player__progress">
+          <div class="player__progress-bar"></div>
+        </div>
+      </div>
+      <ul class="playlist">
+        <li class="playlist__item">
+          <a href="#" data-src="songs/Night-Changes(PagalWorld).mp3">"Night Changes" by One Direction </a>
+        </li>
+        <li class="playlist__item">
+          <a href="#" data-src="songs/Until-I-Found-You-Sped-Up-Em-Beihold-Stephen-Sanchez-F4ST-Cover.mp3">"Until I Found You" by Em Beihold & Stephen Sanchez </a>
+        </li>
+        <li class="playlist__item">
+          <a href="#" data-src="songs/Why-this-kolaveri-di.mp3">"Why This Kolaveri Di" by Anirudh Ravichander</a>
+        </li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
